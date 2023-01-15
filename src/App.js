@@ -1,6 +1,6 @@
 import CogIcon from '@rsuite/icons/legacy/Cog';
 import HomeIcon from '@rsuite/icons/legacy/Home';
-import { Affix, Nav, Navbar } from 'rsuite';
+import { Affix, Button, ButtonToolbar, Nav, Navbar } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import './App.css';
 
@@ -29,8 +29,6 @@ function App() {
     </Nav>
   </Navbar>
 		</Affix>
-	
-		
 		<div class="container">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, perferendis optio voluptatum nemo repudiandae minus corporis modi quos voluptates vel nulla quas quisquam provident delectus nihil perspiciatis facilis et!</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, perferendis optio voluptatum nemo repudiandae minus corporis modi quos voluptates vel nulla quas quisquam provident delectus nihil perspiciatis facilis et!</p>
@@ -58,8 +56,15 @@ function App() {
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, perferendis optio voluptatum nemo repudiandae minus corporis modi quos voluptates vel nulla quas quisquam provident delectus nihil perspiciatis facilis et!</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, perferendis optio voluptatum nemo repudiandae minus corporis modi quos voluptates vel nulla quas quisquam provident delectus nihil perspiciatis facilis et!</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos, perferendis optio voluptatum nemo repudiandae minus corporis modi quos voluptates vel nulla quas quisquam provident delectus nihil perspiciatis facilis et!</p>
-
 		</div>
+
+		<ButtonToolbar>
+			<Button appearance="default">Default</Button>
+			<Button appearance="primary">Primary</Button>
+			<Button appearance="link">Link</Button>
+			<Button appearance="subtle">Subtle</Button>
+			<Button appearance="ghost">Ghost</Button>
+		</ButtonToolbar>
     </div>
   );
 }
