@@ -5,7 +5,7 @@ import AngleUpIcon from '@rsuite/icons/legacy/AngleUp';
 import CogIcon from '@rsuite/icons/legacy/Cog';
 import HomeIcon from '@rsuite/icons/legacy/Home';
 import React from 'react';
-import { Affix, Button, ButtonToolbar, Drawer, IconButton, Nav, Navbar, Placeholder, Radio, RadioGroup } from 'rsuite';
+import { Affix, Button, ButtonToolbar, Drawer, IconButton, Loader, Nav, Navbar, Placeholder, Radio, RadioGroup } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import './App.css';
 
@@ -92,7 +92,6 @@ function App() {
         <Radio value="lg">Large</Radio>
         <Radio value="md">Medium</Radio>
         <Radio value="sm">Small</Radio>
-        <Radio value="xs">Xsmall</Radio>
       </RadioGroup>
       <hr />
       <ButtonToolbar>
@@ -124,6 +123,7 @@ function App() {
           <Placeholder.Paragraph rows={8} />
         </Drawer.Body>
       </Drawer>
+	  <Loader />
     </div>
   );
 }
