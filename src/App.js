@@ -5,7 +5,7 @@ import AngleUpIcon from '@rsuite/icons/legacy/AngleUp';
 import CogIcon from '@rsuite/icons/legacy/Cog';
 import HomeIcon from '@rsuite/icons/legacy/Home';
 import React from 'react';
-import { Affix, Button, ButtonToolbar, Drawer, IconButton, Loader, Nav, Navbar, Placeholder, Radio, RadioGroup } from 'rsuite';
+import { Affix, Button, ButtonToolbar, Drawer, IconButton, Loader, Nav, Navbar, Notification, Placeholder, Radio, RadioGroup } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import './App.css';
 
@@ -17,6 +17,14 @@ const styles = {
 	}
   };
 
+  const Message = React.forwardRef(({ type, ...rest }, ref) => {
+    return (
+      <Notification ref={ref} {...rest} type={type} header={type}>
+        <Placeholder.Paragraph style={{ width: 320 }} rows={3} />
+      </Notification>
+    );
+  });  
+    
 function App() {
 	const [size, setSize] = React.useState('xs');
 	const [open, setOpen] = React.useState(false);
@@ -124,6 +132,7 @@ function App() {
         </Drawer.Body>
       </Drawer>
 	  <Loader />
+    <Message type="success" />
     </div>
   );
 }
